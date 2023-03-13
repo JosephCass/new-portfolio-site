@@ -1,3 +1,13 @@
 .App {
-  height: 900px;
+}
+
+.navbar {
+}
+
+.main {
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
 }

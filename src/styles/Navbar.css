@@ -1,7 +1,10 @@
 .navbar {
-  border-bottom: 1px solid black;
-  position: fixed;
+  position: sticky;
   width: 100%;
+  top: 0px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-heading-container {
@@ -9,8 +12,8 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  width: 100%;
   padding: 20px;
+  align-items: center;
 }
 
 .navbar-heading {
@@ -48,6 +51,50 @@
   height: 17px;
 }
 
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+  text-decoration: none;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to left, #2c90fc, #b827fc);
+}
+
+.last-nav-link {
+  padding: 17px 30px;
+  color: white;
+  background: linear-gradient(93.66deg, #9426eb 0%, #428eff 100%);
+  box-shadow: 0px 10px 52px rgba(0, 64, 210, 0.21);
+  border-radius: 30px;
+}
+
+.last-nav-link:hover {
+  padding: 17px 30px;
+  color: white;
+  background: linear-gradient(93.66deg, #428eff 0%, #9426eb 100%);
+  box-shadow: 0px 10px 52px rgba(0, 64, 210, 0.21);
+  border-radius: 30px;
+  font-weight: 400;
+  border-bottom: 0;
+}
+
 .open-menu-container {
   height: calc(100vh - 71px);
   position: relative;
@@ -55,7 +102,7 @@
 
 .open-menu {
   position: absolute;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   top: 0px;
@@ -70,15 +117,35 @@
 .open-menu-link {
   font-family: "Roboto";
   font-weight: 300;
-  background-color: white;
-  border: 2px solid rgb(170, 170, 170);
+  font-size: 18px;
   padding: 20px;
   width: 90%;
-  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   color: black;
+  max-width: 300px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #2c90fc, #b827fc) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
 }
+
+.open-menu-link:active {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #b827fc, #2c90fc) border-box;
+}
+
+/* .open-menu-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(45deg, #b827fc, #2c90fc);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+} */
 
 .open-menu-link:visited {
   color: black;
@@ -90,4 +157,29 @@
 
 .hide-menu {
   display: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+}
+
+@media only screen and (min-width: 920px) {
+  .navbar-heading-container {
+    padding: 20px 90px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .navbar-heading-container {
+    justify-content: space-between;
+  }
 }

@@ -20,25 +20,76 @@ export default function Navbar() {
             <span className="bold-title">Portfolio</span>
           </h1>
         </div>
-        <button className="menu-btn" onClick={toggleMenu}>
+        <div className="navbar-links desktop-nav">
+          <a className="nav-link" href="#home">
+            Home
+          </a>
+          <a className="nav-link" href="#about">
+            About me
+          </a>
+          <a className="nav-link" href="#skills">
+            Skills
+          </a>
+          <a className="nav-link" href="#projects">
+            Projects
+          </a>
+          <a className="nav-link last-nav-link" href="#contact">
+            Get In Touch
+          </a>
+        </div>
+        <button className="menu-btn mobile-nav" onClick={toggleMenu}>
           <img src={menuImg} alt="Menu button icon" className="menu-btn-icon" />
         </button>
       </div>
-      <div className={`open-menu-container ${menuOpen ? "" : "hide-menu"}`}>
+      <div
+        className={`mobile-nav open-menu-container ${
+          menuOpen ? "" : "hide-menu"
+        }`}
+      >
         <div className="open-menu">
-          <a className="open-menu-link" href="">
+          <a
+            className="open-menu-link"
+            href="#home"
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+          >
             Home
           </a>
-          <a className="open-menu-link" href="">
+          <a
+            className="open-menu-link"
+            href="#about"
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+          >
             About me
           </a>
-          <a className="open-menu-link" href="">
+          <a
+            className="open-menu-link"
+            href="#skills"
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+          >
             Skills
           </a>
-          <a className="open-menu-link" href="">
+          <a
+            className="open-menu-link"
+            href="#projects"
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+          >
             Projects
           </a>
-          <a className="open-menu-link" href="">
+          <a
+            className="open-menu-link"
+            href="#contact"
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+          >
             Get In Touch
           </a>
         </div>
