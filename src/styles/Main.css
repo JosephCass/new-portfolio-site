@@ -114,6 +114,18 @@
 
 .about-photo {
   height: 471px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.about-photo-img {
+  width: 400px;
+  height: auto;
+  max-height: 100%;
+  border-radius: 10px;
 }
 
 .about-me {
@@ -355,6 +367,7 @@
   /* margin-bottom: 60px; */
   padding-left: 20px;
   padding-right: 20px;
+  height: 510px;
 }
 
 .project-img-container {
@@ -422,6 +435,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .tech-container {
@@ -662,6 +680,21 @@
     text-align: start;
   }
 
+  .about {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  .about-me {
+    width: 50%;
+  }
+
+  .about-photo {
+    width: 50%;
+  }
+
   .skills {
     flex-direction: row;
     background-image: url("../assets/mask-desktop-img.png");
@@ -749,8 +782,14 @@
   }
 
   .about-info {
+    padding-left: 0;
+    padding-right: 90px;
+  }
+
+  .about-photo {
     padding-left: 90px;
     padding-right: 90px;
+    margin-bottom: 0px;
   }
 }
 
@@ -761,6 +800,15 @@
   }
 
   .skills {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .about-info {
+    padding-left: 0px;
+    padding-right: 180px;
+  }
+  .about-photo {
     padding-left: 180px;
     padding-right: 180px;
   }

@@ -19,6 +19,7 @@ import homeBannerDesktop from "../assets/home-banner-desktop.png";
 import startImg from "../assets/star-img.svg";
 import linkedinContact from "../assets/linkedin-awsome.svg";
 import emailContact from "../assets/envelope-regular.svg";
+import profilePic from "../assets/profilepicjob.jpeg";
 
 export default function Main() {
   return (
@@ -46,7 +47,10 @@ export default function Main() {
           />
         </picture>
         <div className="home-links">
-          <a href="#" className="home-portfolio-container">
+          <a
+            href="https://drive.google.com/file/d/1FEoVMR4oOp9pOLTfn9rqcA51pexjLVY5/view?usp=share_link"
+            className="home-portfolio-container"
+          >
             <p className="home-portfolio-text">Portfolio</p>
             <img className="home-portfolio-icon" src={arrowMobile} alt="" />
           </a>
@@ -78,18 +82,21 @@ export default function Main() {
         </div>
       </div>
       <div id="about" className="about">
-        <div className="about-photo"></div>
+        <div className="about-photo">
+          <img className="about-photo-img" src={profilePic} alt="" />
+        </div>
         <div className="about-me">
           <div className="about-info">
             <h2 className="about-title">About me</h2>
             <p className="about-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut omnis
-              quibusdam ratione necessitatibus, sequi iure ea itaque ipsum
-              voluptatem ab, rerum labore? Atque odit ad sequi nesciunt odio
-              illum omnis! Tempora error, harum, suscipit velit omnis minima
-              ipsum fugit magnam voluptates aperiam maiores molestiae officiis
-              illo? Omnis sequi fugiat maiores beatae odit voluptatum nostrum,
-              harum possimus tempora dolor, repellendus eum.
+              Hi my name is Joseph, I am a 20 years old currently working as a
+              stairlift technician looking to get into the IT world. My intrest
+              in programming started early from a class I took while in
+              highschool at a college learning python. When I graduated
+              highschool I decided to start learning programming on my own using
+              online reasources like courses and studying for certificates. I
+              have been working to develop my skills in frontend development and
+              looking for any opportunities of hands on experience.
             </p>
             <a className="about-btn" href="#contact">
               Get In Touch
@@ -106,10 +113,10 @@ export default function Main() {
         <div className="skills-info">
           <h2 className="skills-title">Skills & Info</h2>
           <p className="skills-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            velit laudantium. Ullam dicta quaerat vero natus! Modi nulla
-            praesentium voluptas labore aut aliquam nam, minus pariatur optio
-            ipsa quae voluptatibus.
+            I am skilled in frontend development working with technologies like
+            HTML, CSS, JS & React. I also have used other technologies im not so
+            skilled in but have some experience using like Java, MySql,
+            ExpressJS, Bootstrap & MongoDB.
           </p>
           <a className="skills-btn" href="#projects">
             Learn More
@@ -236,9 +243,9 @@ export default function Main() {
             </h3>
             <p className="project-info">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              ratione beatae repellat voluptates dignissimos! Saepe repellat
-              itaque animi dolores iure natus vitae minima?{" "}
+              Arch Studio is a advanced level challenge I completed from
+              frontendmentor.io where im given a figma design and turn it into a
+              working responsive website.
             </p>
             <div className="tech-container">
               <p className="project-tech">HTML, CSS, JS, REACT</p>
@@ -313,10 +320,8 @@ export default function Main() {
               </div>
             </h3>
             <p className="project-info">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              ratione beatae repellat voluptates dignissimos! Saepe repellat
-              itaque animi dolores iure natus vitae minima?{" "}
+              This is a website version of the boardgame Battleship which was a
+              project that was part of the OdinProject course ive done.
             </p>
             <div className="tech-container">
               <p className="project-tech">HTML, CSS, JS</p>
@@ -393,9 +398,9 @@ export default function Main() {
             </h3>
             <p className="project-info">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              ratione beatae repellat voluptates dignissimos! Saepe repellat
-              itaque animi dolores iure natus vitae minima?{" "}
+              This is a weather app where you search the city you want the
+              weather of and it will display info about it at the current time.
+              I made this using an api from openweathermap.org{" "}
             </p>
             <div className="tech-container">
               <p className="project-tech">HTML, CSS, JS, API</p>
@@ -472,9 +477,10 @@ export default function Main() {
             </h3>
             <p className="project-info">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              ratione beatae repellat voluptates dignissimos! Saepe repellat
-              itaque animi dolores iure natus vitae minima?{" "}
+              This is a pokemon memory game I made where you cant click the same
+              pokemon twice. I couldnt find any apis for pokemon photos so I
+              used photos from the poke index on the official site since they're
+              numbered in order from 1 - 905.{" "}
             </p>
             <div className="tech-container">
               <p className="project-tech">HTML, CSS, JS, REACT</p>
@@ -550,10 +556,11 @@ export default function Main() {
               </div>
             </h3>
             <p className="project-info">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              ratione beatae repellat voluptates dignissimos! Saepe repellat
-              itaque animi dolores iure natus vitae minima?{" "}
+              This is a project idea I was making for a site thats manages
+              propertys for real estate owners. I plan on remaking and
+              completing it with react, but what it has so far shows my
+              understanding of the Constraint Validation API and ability to work
+              on forms.{" "}
             </p>
             <div className="tech-container">
               <p className="project-tech">HTML, CSS, JS</p>
