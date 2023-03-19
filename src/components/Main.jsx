@@ -90,13 +90,14 @@ export default function Main() {
             <h2 className="about-title">About me</h2>
             <p className="about-text">
               Hi my name is Joseph, I am a 20 years old currently working as a
-              stairlift technician looking to get into the IT world. My intrest
+              stairlift technician looking to get into the IT world. My interest
               in programming started early from a class I took while in
-              highschool at a college learning python. When I graduated
-              highschool I decided to start learning programming on my own using
-              online reasources like courses and studying for certificates. I
-              have been working to develop my skills in frontend development and
-              looking for any opportunities of hands on experience.
+              highschool at a college learning python. When I graduated high
+              school , I decided to start learning programming on my own. I
+              began using online resources, coding courses and studying for
+              certificates. I have been working to develop my skills in frontend
+              development and looking for any opportunities of hands on
+              experience.
             </p>
             <a className="about-btn" href="#contact">
               Get In Touch
@@ -114,8 +115,8 @@ export default function Main() {
           <h2 className="skills-title">Skills & Info</h2>
           <p className="skills-text">
             I am skilled in frontend development working with technologies like
-            HTML, CSS, JS & React. I also have used other technologies im not so
-            skilled in but have some experience using like Java, MySql,
+            HTML, CSS, JS & React. I also have used other technologies i'm not
+            as skilled in but have some experience using like Java, MySql,
             ExpressJS, Bootstrap & MongoDB.
           </p>
           <a className="skills-btn" href="#projects">
