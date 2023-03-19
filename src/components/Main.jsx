@@ -50,6 +50,7 @@ export default function Main() {
           <a
             href="https://drive.google.com/file/d/1FEoVMR4oOp9pOLTfn9rqcA51pexjLVY5/view?usp=share_link"
             className="home-portfolio-container"
+            title="Google drive link to resume"
           >
             <p className="home-portfolio-text">Portfolio</p>
             <img className="home-portfolio-icon" src={arrowMobile} alt="" />
@@ -60,6 +61,7 @@ export default function Main() {
               href="https://github.com/JosephCass"
               target="_blank"
               rel="noopener noreferrer"
+              title="Joseph Cassinera's github"
             >
               <img
                 className="home-follow-git"
@@ -71,6 +73,7 @@ export default function Main() {
               href="https://www.linkedin.com/in/joseph-cassinera-a4878b22b/"
               target="_blank"
               rel="noopener noreferrer"
+              title="Joseph Cassinera's linkedin"
             >
               <img
                 className="home-follow-linkedin"
@@ -99,7 +102,7 @@ export default function Main() {
               development and looking for any opportunities of hands on
               experience.
             </p>
-            <a className="about-btn" href="#contact">
+            <a title="Contact section" className="about-btn" href="#contact">
               Get In Touch
             </a>
           </div>
@@ -119,7 +122,7 @@ export default function Main() {
             as skilled in but have some experience using like Java, MySql,
             ExpressJS, Bootstrap & MongoDB.
           </p>
-          <a className="skills-btn" href="#projects">
+          <a title="Projects section" className="skills-btn" href="#projects">
             Learn More
           </a>
         </div>
@@ -265,6 +268,7 @@ export default function Main() {
                   href="https://github.com/JosephCass/battleship-vanilla"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Github"
                 >
                   <img
                     className="project-link-icon"
@@ -580,11 +584,12 @@ export default function Main() {
             Joseph <span className="contact-bold-title">Cassinera</span>
           </h3>
           <div className="contact-follow">
-            Follow Us:{" "}
+            Follow Me:{" "}
             <a
               href="https://github.com/JosephCass"
               target="_blank"
               rel="noopener noreferrer"
+              title="Joseph Cassinera's Github"
             >
               <img
                 className="contact-follow-logo"
@@ -597,6 +602,7 @@ export default function Main() {
             "
               target="_blank"
               rel="noopener noreferrer"
+              title="Joseph Cassinera's Linkedin"
             >
               <img
                 className="contact-follow-logo"
