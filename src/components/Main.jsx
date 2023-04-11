@@ -23,8 +23,8 @@ import profilePic from "../assets/profilepicjob.jpeg";
 
 export default function Main() {
   return (
-    <div className="main">
-      <div id="home" className="home">
+    <main className="main">
+      <section id="home" className="home">
         <p className="home-hello-text">Hello</p>
         <p className="home-name-text">
           I'm <span className="purple-text"> Joseph Cassinera</span>
@@ -51,6 +51,7 @@ export default function Main() {
             href="https://drive.google.com/file/d/1FEoVMR4oOp9pOLTfn9rqcA51pexjLVY5/view?usp=share_link"
             className="home-portfolio-container"
             title="Google drive link to resume"
+            rel="external"
           >
             <p className="home-portfolio-text">Portfolio</p>
             <img className="home-portfolio-icon" src={arrowMobile} alt="" />
@@ -60,7 +61,7 @@ export default function Main() {
             <a
               href="https://github.com/JosephCass"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer external"
               title="Joseph Cassinera's github"
             >
               <img
@@ -72,7 +73,7 @@ export default function Main() {
             <a
               href="https://www.linkedin.com/in/joseph-cassinera-a4878b22b/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer external"
               title="Joseph Cassinera's linkedin"
             >
               <img
@@ -83,24 +84,36 @@ export default function Main() {
             </a>
           </div>
         </div>
-      </div>
-      <div id="about" className="about">
+      </section>
+      <section id="about" className="about">
         <div className="about-photo">
-          <img className="about-photo-img" src={profilePic} alt="" />
+          <img
+            loading="lazy"
+            className="about-photo-img"
+            src={profilePic}
+            alt=""
+          />
         </div>
         <div className="about-me">
           <div className="about-info">
             <h2 className="about-title">About me</h2>
             <p className="about-text">
-              Hi my name is Joseph, I am a 20 years old currently working as a
-              stairlift technician looking to get into the IT world. My interest
-              in programming started early from a class I took while in
-              highschool at a college learning python. When I graduated high
-              school , I decided to start learning programming on my own. I
+              Hi my name is Joseph. I am 20 years old and am currently working
+              as a stairlift technician and looking to get into the IT world. My
+              interest in programming started early from a class I took while in
+              high school at a local college learning python. When I graduated
+              high school, I decided to start learning programming on my own. I
               began using online resources, coding courses and studying for
               certificates. I have been working to develop my skills in frontend
-              development and looking for any opportunities of hands on
-              experience.
+              development and am currently looking for opportunities of hands on
+              experience. I am skilled in frontend development working with
+              technologies such as HTML, CSS, JS & React. I am also familiar
+              with Java, MySql, ExpressJS, Bootstrap & MongoDB. One of my strong
+              attributes is interfacing with customers and providing support. I
+              learned these skills from my past restaurant experience together
+              with my current position as as a stairlift installation
+              technician, through educating customers on the use and features of
+              the stairlift device.
             </p>
             <a title="Contact section" className="about-btn" href="#contact">
               Get In Touch
@@ -112,8 +125,8 @@ export default function Main() {
             alt=""
           />
         </div>
-      </div>
-      <div id="skills" className="skills">
+      </section>
+      <section id="skills" className="skills">
         <div className="skills-info">
           <h2 className="skills-title">Skills & Info</h2>
           <p className="skills-text">
@@ -128,7 +141,12 @@ export default function Main() {
         </div>
         <div className="skills-progress">
           <div className="skill-section">
-            <img className="skill-logo" src={jsMobileLogo} alt="" />
+            <img
+              loading="lazy"
+              className="skill-logo"
+              src={jsMobileLogo}
+              alt=""
+            />
             <div className="skill-progress-container">
               <div className="skill-progress-info">
                 <p className="skill-progress-text">JS</p>
@@ -140,7 +158,12 @@ export default function Main() {
             </div>
           </div>
           <div className="skill-section">
-            <img className="skill-logo" src={cssMobileLogo} alt="" />
+            <img
+              loading="lazy"
+              className="skill-logo"
+              src={cssMobileLogo}
+              alt=""
+            />
             <div className="skill-progress-container">
               <div className="skill-progress-info">
                 <p className="skill-progress-text">CSS</p>
@@ -152,7 +175,12 @@ export default function Main() {
             </div>
           </div>
           <div className="skill-section">
-            <img className="skill-logo" src={htmlMobileLogo} alt="" />
+            <img
+              loading="lazy"
+              className="skill-logo"
+              src={htmlMobileLogo}
+              alt=""
+            />
             <div className="skill-progress-container">
               <div className="skill-progress-info">
                 <p className="skill-progress-text">HTML</p>
@@ -164,7 +192,12 @@ export default function Main() {
             </div>
           </div>
           <div className="skill-section">
-            <img className="skill-logo" src={reactMobileLogo} alt="" />
+            <img
+              loading="lazy"
+              className="skill-logo"
+              src={reactMobileLogo}
+              alt=""
+            />
             <div className="skill-progress-container">
               <div className="skill-progress-info">
                 <p className="skill-progress-text">React</p>
@@ -176,8 +209,8 @@ export default function Main() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="projects" className="projects">
+      </section>
+      <section id="projects" className="projects">
         <h2 className="projects-section-title">Projects</h2>
         <div className="projects-container">
           <div className="project-container">
@@ -186,6 +219,7 @@ export default function Main() {
                 className="project-img"
                 src={archStudioImg}
                 alt="Arch studio website preview"
+                loading="lazy"
               />
               <div className="project-links-container desktop">
                 <a
@@ -193,25 +227,27 @@ export default function Main() {
                   className="project-link"
                   href="https://github.com/JosephCass/arch-studio"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                 </a>
                 <a
                   className="project-link"
                   href="https://fastidious-eclair-b0dcb7.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                   title="Live site"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -222,24 +258,30 @@ export default function Main() {
                 <a
                   className="project-link  mobile-project-link"
                   href="https://github.com/JosephCass/arch-studio"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  title="Github"
                 >
                   <img
-                    title="Github"
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                   Github
                 </a>
                 <a
                   className="project-link  mobile-project-link"
                   href="https://fastidious-eclair-b0dcb7.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  title="Live site"
                 >
                   <img
-                    title="Live site"
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                   Site
                 </a>
@@ -261,19 +303,21 @@ export default function Main() {
                 className="project-img"
                 src={battleShipImg}
                 alt="Battleship website preview"
+                loading="lazy"
               />
               <div className="project-links-container desktop">
                 <a
                   className="project-link"
                   href="https://github.com/JosephCass/battleship-vanilla"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                   title="Github"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                 </a>
                 <a
@@ -281,12 +325,13 @@ export default function Main() {
                   className="project-link"
                   href="https://battleship-app-joseph-vanilla.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -299,12 +344,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://github.com/JosephCass/battleship-vanilla"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                   Github
                 </a>
@@ -313,12 +359,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://battleship-app-joseph-vanilla.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                   Site
                 </a>
@@ -338,6 +385,7 @@ export default function Main() {
                 className="project-img"
                 src={weatherAppImg}
                 alt="Battleship website preview"
+                loading="lazy"
               />
               <div className="project-links-container desktop">
                 <a
@@ -345,12 +393,13 @@ export default function Main() {
                   className="project-link"
                   href="https://github.com/JosephCass/weatherapp-vanilla"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                 </a>
                 <a
@@ -358,12 +407,13 @@ export default function Main() {
                   className="project-link"
                   href="https://weather-app-joseph.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -376,12 +426,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://github.com/JosephCass/weatherapp-vanilla"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                   Github
                 </a>
@@ -390,12 +441,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://weather-app-joseph.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                   Site
                 </a>
@@ -417,6 +469,7 @@ export default function Main() {
                 className="project-img"
                 src={memoryGameImg}
                 alt="Battleship website preview"
+                loading="lazy"
               />
               <div className="project-links-container desktop">
                 <a
@@ -424,12 +477,13 @@ export default function Main() {
                   className="project-link"
                   href="https://github.com/JosephCass/pokemon-memory-game"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                 </a>
                 <a
@@ -437,12 +491,13 @@ export default function Main() {
                   className="project-link"
                   href="https://nimble-choux-d503da.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -455,12 +510,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://github.com/JosephCass/pokemon-memory-game"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                   Github
                 </a>
@@ -469,12 +525,13 @@ export default function Main() {
                   className="project-link mobile-project-link"
                   href="https://nimble-choux-d503da.netlify.app/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer external"
                 >
                   <img
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                   Site
                 </a>
@@ -497,6 +554,7 @@ export default function Main() {
                 className="project-img"
                 src={propertyManagerImg}
                 alt="Battleship website preview"
+                loading="lazy"
               />
               <div className="project-links-container desktop">
                 <a
@@ -510,6 +568,7 @@ export default function Main() {
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                 </a>
                 <a
@@ -523,6 +582,7 @@ export default function Main() {
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -541,6 +601,7 @@ export default function Main() {
                     className="project-link-icon"
                     src={gitMobileHome}
                     alt="Gtihub icon"
+                    loading="lazy"
                   />
                   Github
                 </a>
@@ -555,6 +616,7 @@ export default function Main() {
                     className="project-link-icon smaller-icon"
                     src={linkIcon}
                     alt="Arrow link icon"
+                    loading="lazy"
                   />
                   Site
                 </a>
@@ -572,14 +634,15 @@ export default function Main() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="contact" className="contact">
+      </section>
+      <section id="contact" className="contact">
         <div className="contact-header">
           <h3 className="contact-title">
             <img
               src={startImg}
               className="contact-title-logo"
               alt="Star logo"
+              loading="lazy"
             />
             Joseph <span className="contact-bold-title">Cassinera</span>
           </h3>
@@ -595,6 +658,7 @@ export default function Main() {
                 className="contact-follow-logo"
                 src={gitMobileHome}
                 alt="Github logo"
+                loading="lazy"
               />
             </a>
             <a
@@ -608,6 +672,7 @@ export default function Main() {
                 className="contact-follow-logo"
                 src={linkedinMobile}
                 alt="Linkedin Logo"
+                loading="lazy"
               />
             </a>
           </div>
@@ -628,13 +693,19 @@ export default function Main() {
               Projects
             </a>
           </div>
-          <div className="contact-info">
+          <address className="contact-info">
             <h4 className="quick-title">Contact info</h4>
-            <div className="quick-info-container">
+            <a
+              href="mailto:joseph.a.cassinera@gmail.com"
+              className="quick-info-container"
+              title="Email draft to joseph.a.cassinera@gmail.com"
+              rel="external"
+            >
               <img
                 className="quick-contact-icon"
                 src={emailContact}
                 alt="Email icon"
+                loading="lazy"
               />
               <div className="">
                 <p className="quick-contact-type">Email</p>
@@ -642,26 +713,28 @@ export default function Main() {
                   Joseph.a.cassinera@gmail.com
                 </p>
               </div>
-            </div>
-            <div className="linkedin-info">
-              <div className="quick-info-container">
-                <img
-                  className="quick-contact-icon"
-                  src={linkedinContact}
-                  alt="Linkedin icon"
-                />
-                <div className="">
-                  <p className="quick-contact-type">Linkedin</p>
-                  <p className="quick-contact-info">Joseph Cassinera</p>
-                </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joseph-cassinera-a4878b22b/"
+              className="quick-info-container"
+              title="Joseph Cassinera's linkedin"
+              target="_reg"
+              rel="noopener noreferrer external"
+            >
+              <img
+                className="quick-contact-icon"
+                src={linkedinContact}
+                alt="Linkedin icon"
+                loading="lazy"
+              />
+              <div className="">
+                <p className="quick-contact-type">Linkedin</p>
+                <p className="quick-contact-info">Joseph Cassinera</p>
               </div>
-            </div>
-          </div>
+            </a>
+          </address>
         </div>
-      </div>
-      <footer id="footer" className="footer">
-        <p className="footer-text">2023 © Copyright - Portfolio</p>
-      </footer>
-    </div>
+      </section>
+    </main>
   );
 }

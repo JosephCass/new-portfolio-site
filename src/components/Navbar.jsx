@@ -11,7 +11,7 @@ export default function Navbar() {
   }
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="navbar-heading-container">
         <div className="navbar-heading">
           <img className="navbar-title-img" src={startImg} alt="Star logo" />
@@ -20,7 +20,7 @@ export default function Navbar() {
             <span className="bold-title">Portfolio</span>
           </h1>
         </div>
-        <div className="navbar-links desktop-nav">
+        <nav className="navbar-links desktop-nav">
           <a className="nav-link" href="#home">
             Home
           </a>
@@ -36,12 +36,16 @@ export default function Navbar() {
           <a className="nav-link last-nav-link" href="#contact">
             Get In Touch
           </a>
-        </div>
-        <button className="menu-btn mobile-nav" onClick={toggleMenu}>
+        </nav>
+        <button
+          aria-label="menu"
+          className="menu-btn mobile-nav"
+          onClick={toggleMenu}
+        >
           <img src={menuImg} alt="Menu button icon" className="menu-btn-icon" />
         </button>
       </div>
-      <div
+      <nav
         className={`mobile-nav open-menu-container ${
           menuOpen ? "" : "hide-menu"
         }`}
@@ -93,7 +97,7 @@ export default function Navbar() {
             Get In Touch
           </a>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }

@@ -1,3 +1,10 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+}
+
 .navbar {
   position: sticky;
   width: 100%;
